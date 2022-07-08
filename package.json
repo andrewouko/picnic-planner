@@ -1,0 +1,28 @@
+{
+    "name": "picnic-planner",
+    "version": "1.0.0",
+    "description": "A CLI application to determine if it is ok to go for a picnic next weekend",
+    "main": "index.ts",
+    "scripts": {
+        "test": "jest --coverage --forceExit",
+        "build": "rimraf dist && tsc",
+        "serve": "npm run build && node ./dist/index.js --trace-warnings -c"
+    },
+    "keywords": [
+        "picnic",
+        "planner"
+    ],
+    "author": "Andrew Ouko",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.1",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.7.4"
+    },
+    "devDependencies": {
+        "@types/jest": "^28.1.4",
+        "jest": "^28.1.2",
+        "nock": "^13.2.8",
+        "ts-jest": "^28.0.5"
+    }
+}

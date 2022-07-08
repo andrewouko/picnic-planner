@@ -1,0 +1,12 @@
+{
+    "API": {
+        "visual_crossing": {
+            "BASE_URL": "weather.visualcrossing.com",
+            "PATH": {
+                "weather_data": "/VisualCrossingWebServices/rest/services/timeline"
+            },
+            "FAILED_WEATHER_TEXT": "Invalid location found. Please check your location parameter:exists"
+        }
+    },
+    "excluded_flags": "['--trace-warnings', '-c']"
+}
